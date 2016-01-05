@@ -1,0 +1,12 @@
+{% extends "bootstrap/base.html" %}
+{% block content %}
+<table style="width:100%">
+  {% for process in processes %}
+  <tr>
+      {% for p in process %}
+      <td>{{ p }}</td>
+      {% endfor %}
+  </tr>
+  {% endfor %}
+</table>
+{% endblock %}
